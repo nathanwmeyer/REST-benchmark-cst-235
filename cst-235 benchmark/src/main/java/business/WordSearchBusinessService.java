@@ -50,10 +50,8 @@ public class WordSearchBusinessService implements WordSearchBusinessInterface{
 		for(int i=0; i<material.length; i++)
 		{
 			
-			System.out.println(material[i] + " = " + search);
 			if (material[i].equals(search)) count++;
 		}
-		System.out.println(count);
 		return count;
 		
 	}
@@ -61,7 +59,7 @@ public class WordSearchBusinessService implements WordSearchBusinessInterface{
 	@Override
 	public Bible getBible() {
 		// TODO Auto-generated method stub
-		Bible bible = new Bible("", "The LORD is my strength and my song; he has become my salvation. Glad songs of salvation are in the tents of the righteous: ‘The right hand of the LORD does valiantly, the right hand of the LORD exalts, the right hand of the LORD does valiantly!");
+		Bible bible = new Bible(" ", "The LORD is my strength and my song; he has become my salvation. Glad songs of salvation are in the tents of the righteous: ‘The right hand of the LORD does valiantly, the right hand of the LORD exalts, the right hand of the LORD does valiantly!");
 		return bible;
 	}
 
