@@ -9,6 +9,11 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+    <url-pattern>*.jsf</url-pattern>
+  </servlet-mapping>
   
   <!--  JAX-RS Servlet using RestEasy included in JBoss Wildfly -->
   <servlet-mapping>

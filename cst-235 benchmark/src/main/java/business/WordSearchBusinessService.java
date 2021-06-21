@@ -12,7 +12,6 @@ import beans.Bible;
 /**
  * Session Bean implementation class WordSearchBusinessService
  */
-@Default
 @Stateless
 @Local
 @LocalBean
