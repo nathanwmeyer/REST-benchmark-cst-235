@@ -25,7 +25,7 @@ public class WordSearchBusinessService implements WordSearchBusinessInterface{
     }
 
 	@Override
-	public String[] breakDown(String string) {
+	public String[] breakDown(String string) {//clean up the given string to make it easier to compare
 		// TODO Auto-generated method stub
 		String[] output = string.split(" ");
 		for(int i=0; i<output.length; i++)
@@ -42,7 +42,7 @@ public class WordSearchBusinessService implements WordSearchBusinessInterface{
 	}
 
 	@Override
-	public int returnOccurences(Bible bible) {
+	public int returnOccurences(Bible bible) {//count the number of times a given word (stored in bible.search) occurs in a given passage (stored in bible.passage)
 		// TODO Auto-generated method stub
 		String[] material = breakDown(bible.getPassage());
 		int count = 0;
@@ -57,7 +57,7 @@ public class WordSearchBusinessService implements WordSearchBusinessInterface{
 	}
 
 	@Override
-	public Bible getBible() {
+	public Bible getBible() {//creates a bible object based on a specific bible passage and returns it
 		// TODO Auto-generated method stub
 		Bible bible = new Bible(" ", "The LORD is my strength and my song; he has become my salvation. Glad songs of salvation are in the tents of the righteous: ‘The right hand of the LORD does valiantly, the right hand of the LORD exalts, the right hand of the LORD does valiantly!");
 		return bible;

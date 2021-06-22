@@ -24,7 +24,7 @@ public class WordSearchRestService {
 	@GET
 	@Path("/getjson")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Bible> getBibleAsJson(){
+	public List<Bible> getBibleAsJson(){//get a json of the stored bible passage
 		List<Bible> list = new ArrayList<Bible>();
 		list.add(service.getBible());
 		return list;
